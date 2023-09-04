@@ -1,1 +1,1 @@
-# MabNode fro Mad Solution
+# MAB SOLUTION backend
