@@ -35,7 +35,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/my-sports/players", playersRouter);
+
 
 app.use((req, res, next) => {
   const error = new Error("NOT found");
