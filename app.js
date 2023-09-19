@@ -37,8 +37,10 @@ app.use((req, res, next) => {
 
 
 
+app.use("/mab/agent", playersRouter);
 app.use((req, res, next) => {
-  const error = new Error("NOT found");
+  const error = new Error("NOT  found only for test");
+ 
   error.status = 404;
   next(error);
 });

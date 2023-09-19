@@ -5,16 +5,32 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "int-test": "mocha --require babel-core/register --recursive test"
+    "int-test": "mocha --require babel-core/register --recursive test",
+    "start": "nodemon server.js"
+    
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ASADFi/MabNode.git"
   },
-  "author": "",
+  "author": "ASAD",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ASADFi/MabNode/issues"
   },
-  "homepage": "https://github.com/ASADFi/MabNode#readme"
+  "homepage": "https://github.com/ASADFi/MabNode#readme",
+
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
