@@ -1,9 +1,9 @@
 const mysql = require("mysql");
 const con = mysql.createConnection({
   host: "23.106.120.176",
-  user: "thundertechsol_badminton_user",
-  password: "BADuser123$",
-  database: "thundertechsol_mysports",
+  user: "thundertechsol_mab",
+  password: "MABuser123$",
+  database: "thundertechsol_MabSolution",
   port: 3306,
 });
 con.connect(function (err) {
