@@ -3,7 +3,7 @@ const app = express();
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 
-const playersRouter = require("./src/Routes/playersRouter");
+const usersRouter = require("./src/Routes/usersRouter");
 
 app.use(morgan("dev"));
 
@@ -37,7 +37,8 @@ app.use((req, res, next) => {
 
 
 
-app.use("/mab/agent", playersRouter);
+app.use("/mab/agent", usersRouter);
+
 app.use((req, res, next) => {
   const error = new Error("NOT  found only for test");
  
